@@ -1,0 +1,35 @@
+<resources>
+
+
+    <!-- login -->
+
+    <string name="btn_iniciar_pantalla">Iniciar Sesion</string>
+    <string name="btn_registrar_pantalla">Registrarse</string>
+    <string name="btn_cerrar_Sesion">Cerrar Sesion</string>
+
+    <string name="txt_contraseña">Escribe aqui una contraseña</string>
+    <string name="txt_correo">Escribe aqui un correo</string>
+    <string name="txt_contraseña_repeat">Repita contraseña/string</string>
+
+    <!-- Botones Menu -->
+
+    <string name="icm_navarra_btn">ICM NAVARRA</string>
+    <string name="lema_btn">Lema</string>
+    <string name="nosotros_btn">Nosotros</string>
+    <string name="encuentros_btn">Encuentros</string>
+    <string name="escuelas_btn">Escuelas ICM Navarra</string>
+    <string name="libros_btn">Libros</string>
+    <string name="videos_btn">Videos</string>
+    <string name="audios_btn">Audios</string>
+
+    <!-- descripcionnes targetas -->
+    <string name="app_name">ICM Navarra</string>
+    <string name="descripcion_icm_navarra">Bienvenidos a Icm Navarra</string>
+    <string name="escuelas">Escuela ICM</string>
+
+
+
+
+
+
+</resources>
