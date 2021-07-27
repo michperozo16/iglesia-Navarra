@@ -9,8 +9,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="427dp"
-        android:layout_height="755dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_margin="24dp"
         android:background="@drawable/dorado"
         android:orientation="vertical"
@@ -80,7 +80,7 @@
 
                 <TableLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="621dp"
                     android:gravity="center"
                     android:visibility="visible">
 
@@ -91,7 +91,7 @@
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"
+                            android:layout_height="wrap_content"
                             app:cardBackgroundColor="#44484A"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
@@ -111,9 +111,9 @@
                                     android:freezesText="false"
                                     android:text="@string/descripcion_icm_navarra"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                                    android:textColor="#D2FFFFFF"
+                                    android:textColor="#FFFFFF"
                                     android:textSize="25dp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -123,7 +123,7 @@
 
                                     <ImageView
                                         android:id="@+id/imageView2"
-                                        android:layout_width="70dp"
+                                        android:layout_width="90dp"
                                         android:layout_height="90dp"
                                         android:layout_margin="8dp"
                                         app:srcCompat="@drawable/logo" />
@@ -173,7 +173,7 @@
                                     android:text="@string/lema_btn"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
-                                    android:textStyle="bold" />
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -233,7 +233,7 @@
                                     android:text="@string/nosotros_btn"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
-                                    android:textStyle="bold" />
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -293,7 +293,7 @@
                                     android:text="@string/encuentros_btn"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
-                                    android:textStyle="bold" />
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -347,7 +347,7 @@
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="300dp"
-                            android:layout_height="150dp"
+                            android:layout_height="wrap_content"
                             app:cardBackgroundColor="#1B5E20"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
@@ -368,8 +368,8 @@
                                     android:gravity="center"
                                     android:text="@string/escuelas"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                                    android:textColor="#D0FFFFFF"
-                                    android:textStyle="bold" />
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -430,7 +430,7 @@
                                     android:text="@string/libros_btn"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
-                                    android:textStyle="bold" />
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -440,7 +440,7 @@
 
                                     <ImageView
                                         android:id="@+id/imageView8"
-                                        android:layout_width="60dp"
+                                        android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
                                         app:srcCompat="@drawable/ic_library" />
@@ -490,7 +490,7 @@
                                     android:text="@string/videos_btn"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
-                                    android:textStyle="bold" />
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -551,7 +551,7 @@
                                     android:text="Facebook"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
-                                    android:textStyle="bold" />
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -561,7 +561,7 @@
 
                                     <ImageView
                                         android:id="@+id/imageView10"
-                                        android:layout_width="60dp"
+                                        android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
                                         android:scrollbarTrackVertical="@drawable/ic_facebook"
@@ -601,7 +601,7 @@
                     android:gravity="center"
                     android:onClick="irASegundaPantalla"
                     android:text="@string/btn_siguente"
-                    android:textSize="16sp"
+                    android:textSize="24sp"
                     app:cornerRadius="20dp"
                     app:iconPadding="4dp"
                     app:strokeColor="@color/browser_actions_bg_grey" />

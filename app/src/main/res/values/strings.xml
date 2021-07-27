@@ -20,16 +20,40 @@
     <string name="escuelas_btn">Escuelas ICM Navarra</string>
     <string name="libros_btn">Libros</string>
     <string name="videos_btn">Videos</string>
-    <string name="audios_btn">Audios</string>
+    <string name="Predicas_btn">Predicas</string>
 
     <!-- descripcionnes targetas -->
     <string name="app_name">ICM Navarra</string>
     <string name="descripcion_icm_navarra">Bienvenidos a Icm Navarra</string>
+
     <string name="escuelas">Escuela ICM</string>
 
+    <string name="tv_discipulado">Discipulado</string>
+    <string name="discipulado_btn">Discipulado</string>
 
+    <string name="tv_alabanza_icm">Alabanzas ICM</string>
+    <string name="alabanzas_btn">Alabanzas</string>
 
+    <string name="tv_diario">Diario de intimidad</string>
+    <string name="diario_intimidad_btn">Diario intimidad</string>
 
+    <string name="tv_predicas">Predicas en audio</string>
+    <string name="btn_predicas">Predicas</string>
+
+    <!-- cambio de activity -->
+    <string name="btn_siguente">Siguente</string>
+    <string name="btn_anterior">Anterior</string>
+
+    <!-- menu de opsiones -->
+
+    <string name="item1">Discipulado</string>
+    <string name="item2">Alabanzas</string>
+    <string name="item3">Diario</string>
+    <string name="item4">Predicas en audio</string>
+
+    <string name="Buscar">Buscar</string>
+    <string name="Compartir">Compartir</string>
+    <string name="correo">correo</string>
 
 
 </resources>

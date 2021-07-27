@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_index_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IglesiaNavarra">
-        <activity android:name=".LibrosActivity2"></activity>
+        <activity android:name=".SegundaActivity2" />
+        <activity android:name=".LibrosActivity2" />
         <activity android:name=".RegistrarseActivity" />
         <activity android:name=".IniciarSesionActivity" />
         <activity android:name=".MainActivity">
@@ -21,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

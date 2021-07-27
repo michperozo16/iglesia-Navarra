@@ -23,8 +23,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="correo"
+            android:hint="@string/correo"
+            app:endIconMode="clear_text"
+            app:helperText="@string/txt_correo"
             android:inputType="textPersonName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:onClick="@string/txt_correo" />
 
         <EditText
@@ -34,6 +37,7 @@
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:onClick="@string/txt_contraseña" />
 
         <EditText
@@ -43,6 +47,7 @@
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:onClick="@string/txt_contraseña_repeat" />
 
         <Button
