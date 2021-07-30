@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
     // nuevo Segunda pantalla
     public void irEscuela(View view){
-        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://edu.cosechamundialtudela.com/login/index.php"));
+        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/escuela/"));
         startActivity(i);
    }
     public void irLibros(View view){
@@ -131,13 +131,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
     // Metodo para mostrar y ocultar menu
-    public boolean onCreateOptionsMenu(Menu menu){
+   @Override public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.overflow,menu);
         return true;
 
     }
     // Metodo para asignar las funciones correspondientes a las opciones.
-    public boolean onOptionsItemSelected(MenuItem item){
+   @Override public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
         if (id == R.id.compartir){
