@@ -1,4 +1,4 @@
-package com.example.iglesianavarra;
+package app.icm.iglesianavarra;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.iglesianavarra.R;
+
+import java.util.Objects;
+
 public class SegundaActivity2<InstruccionesActivity> extends AppCompatActivity {
 
 
@@ -19,6 +23,10 @@ public class SegundaActivity2<InstruccionesActivity> extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.logo);
+
         setContentView(R.layout.activity_segunda2);
 
 
@@ -60,6 +68,19 @@ public class SegundaActivity2<InstruccionesActivity> extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.compartir){
+            try {
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("text/plain");
+                i.putExtra(Intent.EXTRA_SUBJECT,getResources().getString(R.string.app_name));
+                String aux = "Descarga la app\n";
+                //cuando mi app este en play store tengo que cambiar el link.
+                //aux = aux + "https://play.google.com/store/apps/details?id=com.whatsapp&gl=ES"+getBaseContext().;
+                aux=aux+"https://cosechamundialnavarra.com/";
+                i.putExtra(Intent.EXTRA_TEXT,aux);
+                startActivity(i);
+            }catch (Exception e){
+
+            }
             Toast.makeText(this, "Compartir",Toast.LENGTH_SHORT).show();
             return true;
 

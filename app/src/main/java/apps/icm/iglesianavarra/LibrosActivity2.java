@@ -1,19 +1,14 @@
-package com.example.iglesianavarra;
+package app.icm.iglesianavarra;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.example.iglesianavarra.R;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.ListResult;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
@@ -23,6 +18,8 @@ public class LibrosActivity2 extends AppCompatActivity {
     private ListView listView;
 
     private ArrayList <String> libros;
+
+    private StorageReference mStorageRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +33,7 @@ public class LibrosActivity2 extends AppCompatActivity {
 
 
         //Inicializacion del objeto en firebase Storage
-        StorageReference mStorageRef = FirebaseStorage.getInstance().getReference();
+         mStorageRef = FirebaseStorage.getInstance().getReference();
 
         //traigo la referencia del bucket donde tengo guardado mis libros en pdf de Firebase
         StorageReference ref = mStorageRef.child("libros");

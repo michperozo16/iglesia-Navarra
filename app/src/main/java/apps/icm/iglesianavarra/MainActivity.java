@@ -1,6 +1,5 @@
-package com.example.iglesianavarra;
+package app.icm.iglesianavarra;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,13 +11,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.iglesianavarra.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
-    FirebaseAuth auth;
+    FirebaseAuth mAuth;
 
     private Button login;
     private Button registrar;
@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         registrar = findViewById(R.id.registrarPantalla);
         cerrarSesion = findViewById(R.id.cerrarSesion_btn);
 
-        auth = FirebaseAuth.getInstance();
-        if (auth.getCurrentUser()!=null){
+        mAuth = FirebaseAuth.getInstance();
+        if (mAuth.getCurrentUser()!=null){
             login.setVisibility(View.GONE);
             registrar.setVisibility(View.GONE);
             cerrarSesion.setVisibility(View.VISIBLE);
@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void CerrarSesion(View view){
-        auth.signOut();
-        if (auth.getCurrentUser()==null){
+        mAuth.signOut();
+        if (mAuth.getCurrentUser()==null){
             login.setVisibility(View.VISIBLE);
             registrar.setVisibility(View.VISIBLE);
             cerrarSesion.setVisibility(View.GONE);
@@ -130,17 +130,31 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     // Metodo para mostrar y ocultar menu
    @Override public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.overflow,menu);
         return true;
 
     }
-    // Metodo para asignar las funciones correspondientes a las opciones.
+    // Metodo para asignar las funciones correspondientes a las opciones de menu.
    @Override public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
         if (id == R.id.compartir){
+            try {
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("text/plain");
+                i.putExtra(Intent.EXTRA_SUBJECT,getResources().getString(R.string.app_name));
+                String aux = "Descarga la app\n";
+                //cuando mi app este en play store tengo que cambiar el link.
+                //aux = aux + "https://play.google.com/store/apps/details?id=com.whatsapp&gl=ES"+getBaseContext().;
+                aux=aux+"https://play.google.com/store/apps/details?id=com.whatsapp&gl=ES";
+                i.putExtra(Intent.EXTRA_TEXT,aux);
+                startActivity(i);
+            }catch (Exception e){
+
+            }
             Toast.makeText(this, "Compartir",Toast.LENGTH_SHORT).show();
             return true;
 

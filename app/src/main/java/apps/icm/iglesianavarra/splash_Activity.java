@@ -1,6 +1,4 @@
-package com.example.iglesianavarra;
-
-import androidx.appcompat.app.AppCompatActivity;
+package app.icm.iglesianavarra;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,9 +7,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
+import com.example.iglesianavarra.R;
+
 public class splash_Activity extends Activity {
 
-    private final int DURACION_SPLASH = 3000;
+    private final int DURACION_SPLASH = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
