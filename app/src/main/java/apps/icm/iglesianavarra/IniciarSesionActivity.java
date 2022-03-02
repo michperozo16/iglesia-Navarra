@@ -1,4 +1,4 @@
-package app.icm.iglesianavarra;
+package apps.icm.iglesianavarra;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class IniciarSesionActivity extends AppCompatActivity {
 
-    private EditText correo;
+    /* private EditText correo;
     private EditText contrasena;
 
     private FirebaseAuth mAuth;
@@ -68,5 +68,5 @@ public class IniciarSesionActivity extends AppCompatActivity {
                         // ...
                     }
                 });
-    }
+    }*/
 }

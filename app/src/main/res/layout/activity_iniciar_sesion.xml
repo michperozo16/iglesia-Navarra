@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoprincipal"
-    tools:context=".IniciarSesionActivity">
+    android:background="@drawable/dorado"
+    tools:context="apps.icm.iglesianavarra.IniciarSesionActivity">
 
     <LinearLayout
         android:layout_width="361dp"
@@ -26,7 +26,8 @@
             android:ems="10"
             android:hint="Correo"
             android:inputType="textPersonName"
-            android:onClick="@string/txt_correo" />
+            android:onClick="@string/txt_correo"
+            android:visibility="visible" />
 
         <EditText
             android:id="@+id/contrasena"
@@ -35,14 +36,16 @@
             android:ems="10"
             android:hint="Cotraseña"
             android:inputType="textPassword"
-            android:onClick="@string/txt_contraseña" />
+            android:onClick="@string/txt_contraseña"
+            android:visibility="visible" />
 
         <Button
             android:id="@+id/btn_iniciar_sesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#BD1D1D"
-            android:onClick="iniciarSesion"
-            android:text="@string/btn_iniciar_pantalla" />
+            android:onClick=""
+            android:text="@string/btn_iniciar_pantalla"
+            android:visibility="visible" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

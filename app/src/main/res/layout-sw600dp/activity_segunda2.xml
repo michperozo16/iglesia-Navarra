@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
-    tools:context=".SegundaActivity2">
+    tools:context="apps.icm.iglesianavarra.SegundaActivity2">
 
 
     <LinearLayout
-        android:layout_width="427dp"
-        android:layout_height="755dp"
+        android:layout_width="474dp"
+        android:layout_height="857dp"
         android:layout_margin="24dp"
-        android:background="@drawable/dorado"
+        android:background="@drawable/bg_color"
         android:orientation="vertical"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,8 +84,8 @@
                                         android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/logonegro1"
-                                        tools:srcCompat="@drawable/logonegro1" />
+                                        app:srcCompat="@drawable/logoverde"
+                                        tools:srcCompat="@drawable/logoverde" />
 
                                     <Button
                                         android:id="@+id/discipulado_btn"
@@ -96,6 +96,7 @@
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="irDiscipulado"
                                         android:text="@string/tv_discipulado"
+                                        android:textColor="#FFFFFF"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -157,6 +158,7 @@
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="irAlavanzas"
                                         android:text="@string/alabanzas_btn"
+                                        android:textColor="#FFFFFF"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -207,7 +209,7 @@
                                         android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/tvdiario" />
+                                        app:srcCompat="@drawable/diario" />
 
                                     <Button
                                         android:id="@+id/Diario_btn"
@@ -218,6 +220,7 @@
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="irDiario"
                                         android:text="@string/diario_intimidad_btn"
+                                        android:textColor="#FFFFFF"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -268,8 +271,8 @@
                                         android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/ic_facebook"
-                                        tools:srcCompat="@drawable/ic_audio" />
+                                        app:srcCompat="@drawable/tv_audio"
+                                        tools:srcCompat="@drawable/tv_audio" />
 
                                     <Button
                                         android:id="@+id/Audio_btn"
@@ -280,6 +283,7 @@
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="irPredicas"
                                         android:text="@string/tv_predicas"
+                                        android:textColor="#FFFFFF"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
 
@@ -306,6 +310,7 @@
                     android:backgroundTint="#97020201"
                     android:onClick="IrAPrimeraPantalla"
                     android:text="@string/btn_anterior"
+                    android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     app:cornerRadius="20dp"
                     app:iconPadding="4dp"
@@ -323,4 +328,4 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

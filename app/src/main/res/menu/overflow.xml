@@ -15,6 +15,9 @@
     <item
         android:id="@+id/item4"
         android:title="@string/item4" />
+
+    <item android:id="@+id/info"
+        android:title="Información"/>
     <item
         android:id="@+id/compartir"
         android:icon="@android:drawable/ic_menu_share"

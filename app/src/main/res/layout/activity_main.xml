@@ -3,18 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/dorado"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_color"
     android:visibility="visible"
-    tools:context=".MainActivity">
+    tools:context="apps.icm.iglesianavarra.MainActivity">
 
     <LinearLayout
         android:layout_width="427dp"
         android:layout_height="755dp"
         android:layout_margin="24dp"
-        android:background="@drawable/dorado"
+        android:background="@drawable/bg_color"
         android:orientation="vertical"
         android:visibility="visible"
+        android:minHeight="164dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
@@ -38,7 +39,7 @@
                 android:backgroundTint="#BD1D1D"
                 android:onClick="irIniciar"
                 android:text="@string/btn_iniciar_pantalla"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <Button
                 android:id="@+id/registrarPantalla"
@@ -50,7 +51,7 @@
                 android:backgroundTint="#BD1D1D"
                 android:onClick="irRegistrarse"
                 android:text="@string/btn_registrar_pantalla"
-                android:visibility="gone" />
+                android:visibility="visible" />
         </LinearLayout>
 
         <Button
@@ -92,7 +93,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            app:cardBackgroundColor="#44484A"
+                            app:cardBackgroundColor="#D7101B1C"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
                             app:cardUseCompatPadding="true">
@@ -126,7 +127,7 @@
                                         android:layout_width="70dp"
                                         android:layout_height="90dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/logo" />
+                                        app:srcCompat="@drawable/casa1" />
 
                                     <Button
                                         android:id="@+id/escuela_btn"
@@ -137,6 +138,7 @@
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="irIcmNavarra"
                                         android:text="@string/icm_navarra_btn"
+                                        android:textColor="@color/white"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -155,7 +157,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:cardBackgroundColor="#44484A"
+                            app:cardBackgroundColor="#D7101B1C"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
                             app:cardUseCompatPadding="true">
@@ -186,7 +188,7 @@
                                         android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/plenitud" />
+                                        app:srcCompat="@drawable/gobierno" />
 
                                     <Button
                                         android:id="@+id/lema_btn"
@@ -197,6 +199,7 @@
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="irLema"
                                         android:text="@string/lema_btn"
+                                        android:textColor="@color/white"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -215,7 +218,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:cardBackgroundColor="#44484A"
+                            app:cardBackgroundColor="#D7101B1C"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
                             app:cardUseCompatPadding="true">
@@ -230,7 +233,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/nosotros_btn"
+                                    android:text="@string/pastor_btn"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold" />
@@ -246,7 +249,7 @@
                                         android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/vision" />
+                                        app:srcCompat="@drawable/pastor" />
 
                                     <Button
                                         android:id="@+id/video_btn"
@@ -255,8 +258,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_margin="8dp"
                                         android:backgroundTint="#770E0E07"
-                                        android:onClick="irNosotros"
-                                        android:text="@string/nosotros_btn"
+                                        android:onClick="irPastor"
+                                        android:text="@string/pastor_btn"
+                                        android:textColor="@color/white"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -275,7 +279,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:cardBackgroundColor="#44484A"
+                            app:cardBackgroundColor="#D7101B1C"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
                             app:cardUseCompatPadding="true">
@@ -290,7 +294,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/encuentros_btn"
+                                    android:text="@string/pastora_btn"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold" />
@@ -306,7 +310,7 @@
                                         android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/ministros" />
+                                        app:srcCompat="@drawable/pastora" />
 
                                     <Button
                                         android:id="@+id/encuentro_btn"
@@ -315,8 +319,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_margin="8dp"
                                         android:backgroundTint="#770E0E07"
-                                        android:onClick="irEncuentro"
-                                        android:text="@string/encuentros_btn"
+                                        android:onClick="irPastora"
+                                        android:text="@string/pastora_btn"
+                                        android:textColor="@color/white"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
 
@@ -348,7 +353,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="300dp"
                             android:layout_height="150dp"
-                            app:cardBackgroundColor="#1B5E20"
+                            app:cardBackgroundColor="#D7101B1C"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
                             app:cardUseCompatPadding="true">
@@ -382,8 +387,8 @@
                                         android:layout_width="70dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/logonegro1"
-                                        tools:srcCompat="@drawable/logonegro1" />
+                                        app:srcCompat="@drawable/logo"
+                                        tools:srcCompat="@drawable/logo" />
 
                                     <Button
                                         android:id="@+id/discipulado_btn"
@@ -393,7 +398,8 @@
                                         android:layout_margin="8dp"
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="irEscuela"
-                                        android:text="@string/escuelas_btn"
+                                        android:text="@string/discipulado_btn"
+                                        android:textColor="@color/white"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -412,7 +418,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:cardBackgroundColor="#44484A"
+                            app:cardBackgroundColor="#D7101B1C"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
                             app:cardUseCompatPadding="true">
@@ -427,7 +433,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/libros_btn"
+                                    android:text="@string/ministros_btn"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:textColor="#FFFFFF"
                                     android:textStyle="bold" />
@@ -443,7 +449,7 @@
                                         android:layout_width="60dp"
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
-                                        app:srcCompat="@drawable/ic_library" />
+                                        app:srcCompat="@drawable/ministros" />
 
                                     <Button
                                         android:id="@+id/Alavanzas_btn"
@@ -452,8 +458,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_margin="8dp"
                                         android:backgroundTint="#770E0E07"
-                                        android:onClick="irLibros"
-                                        android:text="@string/libros_btn"
+                                        android:onClick="irMinistros"
+                                        android:text="@string/ministros_btn"
+                                        android:textColor="@color/white"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -472,7 +479,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:cardBackgroundColor="#44484A"
+                            app:cardBackgroundColor="#D7101B1C"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
                             app:cardUseCompatPadding="true">
@@ -515,6 +522,7 @@
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="irVideo"
                                         android:text="@string/videos_btn"
+                                        android:textColor="@color/white"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -533,7 +541,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="142dp"
-                            app:cardBackgroundColor="#44484A"
+                            app:cardBackgroundColor="#D7101B1C"
                             app:cardCornerRadius="20dp"
                             app:cardPreventCornerOverlap="true"
                             app:cardUseCompatPadding="true">
@@ -565,7 +573,7 @@
                                         android:layout_height="70dp"
                                         android:layout_margin="8dp"
                                         android:scrollbarTrackVertical="@drawable/ic_facebook"
-                                        app:srcCompat="@drawable/ic_facebook" />
+                                        app:srcCompat="@drawable/facebook" />
 
                                     <Button
                                         android:id="@+id/Facebook_btn"
@@ -575,7 +583,8 @@
                                         android:layout_margin="8dp"
                                         android:backgroundTint="#770E0E07"
                                         android:onClick="facebook"
-                                        android:text="ICM NAVARRA"
+                                        android:text="ICM Facebook"
+                                        android:textColor="@color/white"
                                         app:cornerRadius="20dp"
                                         app:strokeColor="@color/browser_actions_bg_grey" />
                                 </LinearLayout>
@@ -601,6 +610,7 @@
                     android:gravity="center"
                     android:onClick="irASegundaPantalla"
                     android:text="@string/btn_siguente"
+                    android:textColor="@color/white"
                     android:textSize="16sp"
                     app:cornerRadius="20dp"
                     app:iconPadding="4dp"

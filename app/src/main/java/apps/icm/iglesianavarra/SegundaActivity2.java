@@ -1,9 +1,10 @@
-package app.icm.iglesianavarra;
+package apps.icm.iglesianavarra;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -29,11 +30,14 @@ public class SegundaActivity2<InstruccionesActivity> extends AppCompatActivity {
 
         setContentView(R.layout.activity_segunda2);
 
+        //evitar que la pantalla rote
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
 
         }
 
         public void irDiscipulado(View view){
-            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://edu.cosechamundialtudela.com/login/index.php"));
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://edu.cosechamundialnavarra.com/course/view.php?id=6"));
             startActivity(i);
         }
         public void irAlavanzas(View view){
@@ -41,7 +45,7 @@ public class SegundaActivity2<InstruccionesActivity> extends AppCompatActivity {
             startActivity(i);
         }
         public void irDiario(View view){
-            Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/groups/911992186288496"));
+            Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/groups/236611451987843"));
             startActivity(i);
         }
         public void irPredicas(View view){
@@ -107,6 +111,7 @@ public class SegundaActivity2<InstruccionesActivity> extends AppCompatActivity {
             irPredicas(null);
             Toast.makeText(this, "Audios",Toast.LENGTH_SHORT).show();
             return true;
+
         } return  super.onOptionsItemSelected(item);
     }
 }

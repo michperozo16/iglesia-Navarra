@@ -1,4 +1,4 @@
-package app.icm.iglesianavarra;
+package apps.icm.iglesianavarra;
 
 import org.junit.Test;
 

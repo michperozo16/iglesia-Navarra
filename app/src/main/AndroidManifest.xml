@@ -11,12 +11,12 @@
         android:roundIcon="@mipmap/ic_index_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IglesiaNavarra">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".SegundaActivity2" />
-        <activity android:name=".LibrosActivity2" />
-        <activity android:name=".RegistrarseActivity" />
-        <activity android:name=".IniciarSesionActivity" />
-        <activity android:name=".splash_Activity">
+        <activity android:name="apps.icm.iglesianavarra.MainActivity"></activity>
+        <activity android:name="apps.icm.iglesianavarra.SegundaActivity2" />
+        <activity android:name="apps.icm.iglesianavarra.LibrosActivity2" />
+        <activity android:name="apps.icm.iglesianavarra.RegistrarseActivity" />
+        <activity android:name="apps.icm.iglesianavarra.IniciarSesionActivity" />
+        <activity android:name="apps.icm.iglesianavarra.splash_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

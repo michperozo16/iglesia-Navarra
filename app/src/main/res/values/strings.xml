@@ -15,10 +15,10 @@
 
     <string name="icm_navarra_btn">ICM NAVARRA</string>
     <string name="lema_btn">Lema</string>
-    <string name="nosotros_btn">Nosotros</string>
-    <string name="encuentros_btn">Encuentros</string>
+    <string name="pastor_btn">Video Pastor</string>
+    <string name="pastora_btn">Video Pastora</string>
     <string name="escuelas_btn">Escuelas ICM Navarra</string>
-    <string name="libros_btn">Libros</string>
+    <string name="ministros_btn">Ministros</string>
     <string name="videos_btn">Videos</string>
     <string name="Predicas_btn">Predicas</string>
 

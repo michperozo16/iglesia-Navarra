@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "12736560936",
-    "project_id": "iglesia-navarra-fe4ab",
-    "storage_bucket": "iglesia-navarra-fe4ab.appspot.com"
+    "project_number": "275013856052",
+    "project_id": "iglesia-navarra-f822a",
+    "storage_bucket": "iglesia-navarra-f822a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:12736560936:android:c10bfd4e10343c693bda1d",
+        "mobilesdk_app_id": "1:275013856052:android:54c3aeb959d3e1210b9361",
         "android_client_info": {
-          "package_name": "com.example.iglesianavarra"
+          "package_name": "apps.icm.iglesianavarra"
         }
       },
       "oauth_client": [
         {
-          "client_id": "12736560936-dpslrpqcsjs6mushvghomfp97kadhtt0.apps.googleusercontent.com",
+          "client_id": "275013856052-i8npmnag5158vb8hhp5d36o31n9l2m43.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAFCITRbLWCzL5OkhiE33WI23H9YlyrfNw"
+          "current_key": "AIzaSyCfouh62BE2URb8Q4hxrOLBzmrYLjb9f60"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "12736560936-dpslrpqcsjs6mushvghomfp97kadhtt0.apps.googleusercontent.com",
+              "client_id": "275013856052-i8npmnag5158vb8hhp5d36o31n9l2m43.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

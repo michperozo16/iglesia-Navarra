@@ -1,13 +1,17 @@
-package app.icm.iglesianavarra;
+package apps.icm.iglesianavarra;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -33,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+         //evitar que la pantalla rote
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+/*
         login = findViewById(R.id.iniciarSesionPantalla);
         registrar = findViewById(R.id.registrarPantalla);
         cerrarSesion = findViewById(R.id.cerrarSesion_btn);
@@ -44,12 +51,13 @@ public class MainActivity extends AppCompatActivity {
             registrar.setVisibility(View.GONE);
             cerrarSesion.setVisibility(View.VISIBLE);
         }
-
+*/
     }
 
     public void irIniciar(View view){
         Intent i = new Intent(this, IniciarSesionActivity.class);
                 startActivity(i);
+
     }
 
     public void irRegistrarse(View view){
@@ -90,27 +98,28 @@ public class MainActivity extends AppCompatActivity {
     public void irIcmNavarra(View view){
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://cosechamundialnavarra.com"));
         startActivity(i);
+
     }
     public void irLema(View view){
         Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/lema-2021/"));
         startActivity(i);
     }
-    public void irNosotros(View view){
-        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/nosotros/"));
+    public void irPastor(View view){
+        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/videos/"));
         startActivity(i);
     }
-    public void irEncuentro(View view){
-        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/encuentros-de-amistad/"));
+    public void irPastora(View view){
+        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/videos-pastora/"));
         startActivity(i);
     }
 
     // nuevo Segunda pantalla
     public void irEscuela(View view){
-        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/escuela/"));
+        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://edu.cosechamundialnavarra.com/course/view.php?id=6"));
         startActivity(i);
    }
-    public void irLibros(View view){
-        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/libros-pdf/"));
+    public void irMinistros(View view){
+        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://cosechamundialnavarra.com/ministros-icm/"));
         startActivity(i);
     }
     public void irVideo(View view){
@@ -149,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                 String aux = "Descarga la app\n";
                 //cuando mi app este en play store tengo que cambiar el link.
                 //aux = aux + "https://play.google.com/store/apps/details?id=com.whatsapp&gl=ES"+getBaseContext().;
-                aux=aux+"https://play.google.com/store/apps/details?id=com.whatsapp&gl=ES";
+                aux=aux+"https://play.google.com/store/apps/details?id=apps.icm.iglesianavarra&gl=ES";
                 i.putExtra(Intent.EXTRA_TEXT,aux);
                 startActivity(i);
             }catch (Exception e){
@@ -177,7 +186,11 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.item4){
             Toast.makeText(this, "Predicas en audio",Toast.LENGTH_SHORT).show();
             return true;
+
+
         } return  super.onOptionsItemSelected(item);
     }
+
+
 
 }

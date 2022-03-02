@@ -1,4 +1,4 @@
-package app.icm.iglesianavarra;
+package apps.icm.iglesianavarra;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,7 +29,7 @@ public class RegistrarseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrarse);
 
-        mAuth = FirebaseAuth.getInstance();
+     /*   mAuth = FirebaseAuth.getInstance();
 
         correo = findViewById(R.id.correo);
         contraseña = findViewById(R.id.contrasena);
@@ -73,7 +73,7 @@ public class RegistrarseActivity extends AppCompatActivity {
 
         }else {
             Toast.makeText(this, "Las contraseñas no coinsiden",Toast.LENGTH_SHORT).show();
-        }
+        }*/
 
 
 

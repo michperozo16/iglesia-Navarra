@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoprincipal"
-    tools:context=".RegistrarseActivity">
+    android:background="@drawable/bg_color"
+    tools:context="apps.icm.iglesianavarra.RegistrarseActivity">
 
     <LinearLayout
         android:layout_width="337dp"
@@ -54,8 +54,6 @@
             android:id="@+id/btn_registrarse_sesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#BD1D1D"
-            android:onClick="registrarUsuario"
-            android:text="@string/btn_registrar_pantalla" />
+            android:backgroundTint="#BD1D1D" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
